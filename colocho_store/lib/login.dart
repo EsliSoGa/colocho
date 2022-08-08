@@ -94,9 +94,14 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 54.0,
                         height: 54.0,
                         decoration: const ShapeDecoration(
-                          color: Color(0xFF1877F2),
-                          shape: CircleBorder(),
-                        ),
+                            color: Color(0xFF1877F2),
+                            shape: CircleBorder(),
+                            shadows: [
+                              BoxShadow(
+                                  color: Colors.black26,
+                                  offset: Offset(0, 2),
+                                  blurRadius: 3.0)
+                            ]),
                         child: IconButton(
                           //padding: const EdgeInsets.all(6.0), No funciona
                           icon: const Icon(Icons.facebook),
@@ -108,13 +113,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 54.0,
                         height: 54.0,
                         decoration: const ShapeDecoration(
-                          color: Colors.black12,
-                          shape: CircleBorder(),
-                          //shadows: Shadow(color: Colors.black87, offset: Offset.zero, blurRadius: 1.2)
-                        ),
+                            color: Colors.white,
+                            shape: CircleBorder(),
+                            shadows: [
+                              BoxShadow(
+                                  color: Colors.black26,
+                                  offset: Offset(0, 2),
+                                  blurRadius: 3.0)
+                            ]),
                         child: IconButton(
                           //padding: const EdgeInsets.all(6.0), No funciona
-                          icon: const Icon(Icons.abc),
+                          icon: const Image(
+                              image: AssetImage(
+                                  'assets/images/iconos/GoogleLogo.png')),
                           color: Colors.black,
                           onPressed: () {},
                         ),
@@ -123,9 +134,14 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 54.0,
                         height: 54.0,
                         decoration: const ShapeDecoration(
-                          color: Colors.black,
-                          shape: CircleBorder(),
-                        ),
+                            color: Colors.black,
+                            shape: CircleBorder(),
+                            shadows: [
+                              BoxShadow(
+                                  color: Colors.black26,
+                                  offset: Offset(0, 2),
+                                  blurRadius: 3.0)
+                            ]),
                         child: IconButton(
                           //padding: const EdgeInsets.all(6.0), No funciona
                           icon: const Icon(Icons.apple),
