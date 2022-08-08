@@ -1,3 +1,4 @@
+import 'package:colocho_store/home.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/src/foundation/key.dart';
 //import 'package:flutter/src/widgets/framework.dart';
@@ -167,7 +168,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Home()),
+                      );
+                    },
                     child: const Text("Iniciar Sesión"),
                   ),
                 ),
