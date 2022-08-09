@@ -1,4 +1,6 @@
+import 'package:colocho_store/column.dart';
 import 'package:colocho_store/home.dart';
+import 'package:colocho_store/row.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/src/foundation/key.dart';
 //import 'package:flutter/src/widgets/framework.dart';
@@ -107,7 +109,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           //padding: const EdgeInsets.all(6.0), No funciona
                           icon: const Icon(Icons.facebook),
                           color: Colors.white,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const ColumnScreen()),
+                            );
+                          },
                         ),
                       ),
                       Ink(
@@ -128,7 +136,13 @@ class _LoginScreenState extends State<LoginScreen> {
                               image: AssetImage(
                                   'assets/images/iconos/GoogleLogo.png')),
                           color: Colors.black,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const RowScreen()),
+                            );
+                          },
                         ),
                       ),
                       Ink(
